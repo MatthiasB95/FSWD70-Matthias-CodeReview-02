@@ -1,7 +1,8 @@
+
 body
-	background: white
+	background: black
 	margin: 0
-	border: solid 1px black
+	
     
 #container
 	height: 100%
@@ -11,11 +12,11 @@ body
 	margin: 0 auto
 	text-align: justify
 	width: 45%
-	border: solid 1px black
+	
 
 header
 	display: flex
-	justify-content: space-between
+	justify-content: space-around
 	flex-direction: row
 	align-items: center
 	background: #571112
@@ -40,11 +41,47 @@ nav
 	display: inline
 	padding: 0 5px
 
-#main
+.main
 	display: flex
-	flex-direction: column
+	flex-direction: row
+	justify-content: flex-start
 	width: 100%
-	border: solid 1px black
+	
+
+.pic
+	width: 100%
+	height: 40%
+	margin: 0px
+	z-index: -1
+
+.pic1
+	width: 100%
+	height: 70%
+	margin: 0px
+	z-index: -1
+	
+
+.test
+	position: relative
+	text-align: left
+	
+.span	
+	position: absolute
+	top: 32%
+	background: #101010
+	color: white
+	width: 100%
+	height: 18%
+	text-align: center
+
+.span2	
+	position: absolute
+	top: 65%
+	background: #101010
+	color: white
+	width: 100%
+	height: 25%
+	text-align: center
 
 #news
 	background-color: #DEDEDE
@@ -54,51 +91,50 @@ nav
 	background-color: #DEDEDE
 	width: 80%
 
-#main
-	display: flex
-	flex-wrap: wrap
-
-.pic
-	width: 33%
-	box-sizing: border-box
-	align-items: row
-
-
-
-
-
-
 #main_bottom
-	border: solid 1px black
+	
 	width: 100%
 	display: flex
-	flex-wrap: wrap
- 
+	flex-direction: row
 
+.pic_bot
+	width: 60%
+	height: 35%
+	z-index: -1
 
+.span_bot1
+	position: relative
+	background: #101010
+	color: white
+	width: 60%
+	height: 12%
+	bottom: 5%
+
+.span_bot2
+	position: relative
+	background: #101010
+	color: white
+	width: 60%
+	height: 12%
+	bottom: 5%
 	
-	
-	
+section
+	float: right
+	height: 80%
 
 footer
 	background-color: #101010	
 	color: white
 	display: flex
-	flex-direction: column
-	
+	flex-direction: column	
 
 #list2
 	padding-left: 0 auto
 	float: left
-
 		
 .li2
 	display: inline
 	padding: 0 5px	
-
-
-
-
 		
 footer #img_footer
 	align-self: flex-end
@@ -107,9 +143,41 @@ footer #img_footer
 footer span
 	align-self: center
 
+a
+	color: white
+	text-decoration: none
 
-	
-	
+.bannermob
+	display: none
 
+@media screen and (max-width: 700px)
+
+	header
+		width: 100%
+
+	.main
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		flex-wrap: wrap
+		width: 100%
+		
+	.bannermob
+		display:inline
+		
+	#img2
+		display: none
+
+	li
+		font-size: 20px
+
+	span
+		display: none
+
+	.banner
+		display: none
+	
+@media screen and (min-width: 481px) and (max-width:1049px)	
+	
 	
 
