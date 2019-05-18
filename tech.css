@@ -1,0 +1,13 @@
+#back {
+  color: white;
+  text-decoration: none; }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  background: #571112;
+  width: 100%; }
+
+/*# sourceMappingURL=tech.css.map */
